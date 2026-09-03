@@ -118,6 +118,7 @@ export default function Navbar() {
       <motion.div
         initial={false}
         animate={mobileOpen ? 'open' : 'closed'}
+        variants={{ open: { pointerEvents: 'auto' }, closed: { pointerEvents: 'none' } }}
         className="lg:hidden fixed inset-0 z-40"
       >
         <motion.div

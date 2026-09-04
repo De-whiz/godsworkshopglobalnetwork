@@ -109,7 +109,11 @@ export default function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`lg:hidden p-2 rounded-lg ${overHero ? 'text-white' : 'text-ink'}`}
+          className={`lg:hidden p-2.5 rounded-xl transition-all duration-300 ${
+            overHero
+              ? 'text-white border border-white/40 bg-white/10 backdrop-blur-md hover:bg-white/20'
+              : 'text-ink'
+          }`}
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

@@ -37,16 +37,17 @@ export default function Navbar() {
   const overHero = !scrolled && location.pathname === '/'
 
   return (
-    <motion.header
-      initial={{ y: -90 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        overHero
-          ? 'bg-transparent'
-          : 'bg-ivory/90 backdrop-blur-lg border-b border-line shadow-soft'
-      }`}
-    >
+    <>
+      <motion.header
+        initial={{ y: -90 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          overHero
+            ? 'bg-transparent'
+            : 'bg-ivory/90 backdrop-blur-lg border-b border-line shadow-soft'
+        }`}
+      >
       <nav className="max-w-[1200px] mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 group">
           <img
@@ -114,6 +115,7 @@ export default function Navbar() {
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </nav>
+      </motion.header>
 
       <motion.div
         initial={false}
@@ -178,6 +180,6 @@ export default function Navbar() {
           </div>
         </motion.div>
       </motion.div>
-    </motion.header>
+    </>
   )
 }

@@ -85,7 +85,7 @@ export default function Services() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl">
-            <h1 className="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-heading text-4xl sm:text-6xl font-bold text-white leading-tight">
               Our Services &
               <br />
               <span className="italic text-accent-400">Programs</span>
@@ -99,13 +99,13 @@ export default function Services() {
       </section>
 
       {/* Weekly services */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl mb-12">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-600 to-primary-800">
               <CalendarDays className="w-7 h-7 text-white" />
             </div>
-            <h2 className="mt-6 font-heading text-4xl sm:text-5xl font-bold text-ink leading-tight">
+            <h2 className="mt-6 font-heading text-3xl sm:text-5xl font-bold text-ink leading-tight">
               Weekly services
             </h2>
             <p className="mt-4 text-lg text-slate">
@@ -122,7 +122,7 @@ export default function Services() {
                   className="group h-full bg-ivory rounded-2xl border border-line p-7 hover:border-accent-300 hover:shadow-lift transition-all duration-300"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="shrink-0 w-16 h-16 rounded-xl bg-primary-50 flex flex-col items-center justify-center">
+                    <div className="shrink-0 w-12 sm:w-16 h-12 sm:h-16 rounded-xl bg-primary-50 flex flex-col items-center justify-center">
                       <span className="font-heading text-xs font-bold text-primary-600 uppercase tracking-wide">
                         {s.abbr}
                       </span>
@@ -161,13 +161,13 @@ export default function Services() {
       </section>
 
       {/* Monthly programs */}
-      <section className="py-24 bg-ivory">
+      <section className="py-16 sm:py-24 bg-ivory">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl mb-12">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500 to-accent-600">
               <Calendar className="w-7 h-7 text-white" />
             </div>
-            <h2 className="mt-6 font-heading text-4xl sm:text-5xl font-bold text-ink leading-tight">
+            <h2 className="mt-6 font-heading text-3xl sm:text-5xl font-bold text-ink leading-tight">
               Monthly programs
             </h2>
             <p className="mt-4 text-lg text-slate">

@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-accent-500/60 to-transparent" />
 
       <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           <div>
             <div className="flex items-center gap-3">
               <img

@@ -17,7 +17,7 @@ export default function PrayerCTA() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary-900/95 via-primary-800/90 to-primary-900/85" />
             </div>
 
-            <div className="relative z-10 px-8 py-16 sm:px-14 sm:py-20 lg:px-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative z-10 px-6 py-12 sm:px-14 sm:py-20 lg:px-20 grid lg:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight text-balance">
                   Need prayer?

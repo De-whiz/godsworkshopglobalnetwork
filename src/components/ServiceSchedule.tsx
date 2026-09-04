@@ -56,7 +56,7 @@ export default function ServiceSchedule() {
                       </span>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-ink truncate">{s.name}</p>
+                      <p className="font-semibold text-ink line-clamp-2">{s.name}</p>
                       <p className="text-sm text-slate mt-0.5 flex items-center gap-1.5">
                         <Clock className="w-3.5 h-3.5" />
                         {s.time}

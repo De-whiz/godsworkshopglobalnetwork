@@ -56,7 +56,7 @@ export default function PrayerRequest() {
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: 40 }}
             transition={{ type: 'spring', stiffness: 300, damping: 26 }}
-            className="fixed top-24 right-6 z-50 max-w-sm w-full bg-white rounded-2xl shadow-lift border border-line p-5 flex items-start gap-4"
+            className="fixed top-24 right-4 left-4 sm:right-6 sm:left-auto z-50 max-w-sm bg-white rounded-2xl shadow-lift border border-line p-5 flex items-start gap-4"
           >
             <div className="shrink-0 w-10 h-10 rounded-full bg-success/10 flex items-center justify-center">
               <CheckCircle className="w-5 h-5 text-success" />
@@ -94,7 +94,7 @@ export default function PrayerRequest() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl">
-            <h1 className="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-heading text-[36px] sm:text-6xl font-bold text-white leading-tight">
               Submit a
               <br />
               <span className="italic text-accent-400">Prayer Point</span>

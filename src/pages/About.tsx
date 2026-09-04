@@ -68,7 +68,7 @@ export default function About() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl">
-            <h1 className="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-heading text-4xl sm:text-6xl font-bold text-white leading-tight">
               Rooted in prayer,
               <br />
               <span className="italic text-accent-400">burning for revival</span>
@@ -82,11 +82,11 @@ export default function About() {
       </section>
 
       {/* Our story + timeline */}
-      <section className="py-24 bg-ivory">
+      <section className="py-16 sm:py-24 bg-ivory">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
             <AnimatedSection direction="left">
-              <h2 className="font-heading text-4xl sm:text-5xl font-bold text-ink leading-tight">
+              <h2 className="font-heading text-3xl sm:text-5xl font-bold text-ink leading-tight">
                 A vision born of divine calling
               </h2>
               <div className="mt-6 space-y-4 text-slate leading-relaxed">
@@ -165,7 +165,7 @@ export default function About() {
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-500 to-accent-600">
               <Eye className="w-7 h-7 text-white" />
             </div>
-            <h2 className="mt-6 font-heading text-4xl sm:text-5xl font-bold text-ink leading-tight">
+            <h2 className="mt-6 font-heading text-3xl sm:text-5xl font-bold text-ink leading-tight">
               What we are pressing toward
             </h2>
           </AnimatedSection>
@@ -189,7 +189,7 @@ export default function About() {
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl mb-12">
-            <h2 className="font-heading text-4xl sm:text-5xl font-bold text-ink leading-tight">
+            <h2 className="font-heading text-3xl sm:text-5xl font-bold text-ink leading-tight">
               What we stand for
             </h2>
           </AnimatedSection>
@@ -224,7 +224,7 @@ export default function About() {
                   <img
                     src="/images/IMG-20260903-WA0019.jpg"
                     alt="Pastor Kehinde Omolaja"
-                    className="w-full h-[560px] lg:h-[620px] object-cover object-top"
+                    className="w-full h-[360px] sm:h-[560px] lg:h-[620px] object-cover object-top"
                   />
                 </div>
                 <div className="absolute inset-0 rounded-3xl ring-1 ring-white/20 ring-inset pointer-events-none" />
@@ -255,7 +255,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="mt-8 grid grid-cols-3 gap-4">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {[
                   { icon: GraduationCap, label: 'Mechanical Engineering', sub: 'First Degree' },
                   { icon: Briefcase, label: 'Information Science', sub: 'Second Degree' },

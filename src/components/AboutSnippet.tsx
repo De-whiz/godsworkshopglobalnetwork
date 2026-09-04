@@ -14,7 +14,7 @@ export default function AboutSnippet() {
                 <img
                   src="/images/IMG-20260903-WA0017.jpg"
                   alt="God's Workshop ministry gathering"
-                  className="w-full h-[420px] object-cover"
+                  className="w-full h-[280px] sm:h-[420px] object-cover"
                 />
               </div>
 
@@ -23,7 +23,7 @@ export default function AboutSnippet() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute -bottom-6 -right-4 sm:right-6 bg-white rounded-2xl shadow-lift px-6 py-4 flex items-center gap-4"
+                className="absolute -bottom-6 right-2 sm:right-6 bg-white rounded-2xl shadow-lift px-6 py-4 flex items-center gap-4"
               >
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center">
                   <span className="text-white font-heading text-xl font-bold">G</span>

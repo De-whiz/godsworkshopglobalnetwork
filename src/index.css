@@ -14,6 +14,18 @@
     line-height: 1.6;
   }
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  svg,
+  video {
+    max-width: 100%;
+  }
+
   ::selection {
     background-color: theme('colors.accent.500');
     color: theme('colors.ink');

@@ -59,7 +59,7 @@ export default function Hero() {
         className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-accent-500 via-accent-300 to-transparent origin-left"
       />
 
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-5 sm:px-8 pt-28 pb-20">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 sm:px-8 pt-28 pb-16 sm:pb-20">
         <div className="grid lg:grid-cols-12 gap-14 items-center">
           {/* Left column */}
           <div className="lg:col-span-7">
@@ -81,7 +81,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.25, ease }}
-              className="mt-7 font-heading text-[44px] sm:text-6xl lg:text-[72px] font-bold leading-[1.03] text-white"
+              className="mt-7 font-heading text-[clamp(2.25rem,10vw,4.5rem)] font-bold leading-[1.03] text-white"
             >
               A place where
               <br />
@@ -139,15 +139,15 @@ export default function Hero() {
               initial={{ opacity: 0, y: 26 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.7, ease }}
-              className="mt-14 flex items-center gap-8 sm:gap-12"
+              className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 sm:gap-12"
             >
               {[
                 { n: '9+', l: 'Years of Ministry' },
                 { n: '6', l: 'Books Written' },
                 { n: '1000+', l: 'Lives Touched' },
               ].map((s) => (
-                <div key={s.l} className="border-l border-white/20 pl-5">
-                  <p className="font-heading text-3xl sm:text-4xl font-bold text-white">
+                <div key={s.l} className="border-l border-white/20 pl-3 sm:pl-5">
+                  <p className="font-heading text-2xl sm:text-4xl font-bold text-white">
                     {s.n}
                   </p>
                   <p className="text-[13px] text-white/60 mt-1">{s.l}</p>

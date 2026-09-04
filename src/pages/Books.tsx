@@ -42,7 +42,7 @@ export default function Books() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8">
           <AnimatedSection className="max-w-2xl">
-            <h1 className="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-heading text-4xl sm:text-6xl font-bold text-white leading-tight">
               Books by
               <br />
               <span className="italic text-accent-400">Pastor Kehinde (JP)</span>
@@ -56,9 +56,9 @@ export default function Books() {
       </section>
 
       {/* Book catalog */}
-      <section className="py-24 bg-ivory">
+      <section className="py-16 sm:py-24 bg-ivory">
         <div className="max-w-[1200px] mx-auto px-5 sm:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {books.map((b, i) => (
               <AnimatedSection key={b.id} delay={i * 0.1}>
                 <motion.div

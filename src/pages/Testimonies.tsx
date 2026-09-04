@@ -186,7 +186,7 @@ export default function Testimonies() {
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 items-end">
           <AnimatedSection className="lg:col-span-8">
-            <h1 className="font-heading text-5xl sm:text-6xl font-bold text-white leading-tight">
+            <h1 className="font-heading text-4xl sm:text-6xl font-bold text-white leading-tight">
               Wonderful is what
               <br />
               <span className="italic text-accent-400">God has done</span>
@@ -214,7 +214,7 @@ export default function Testimonies() {
 
       {/* Stats strip */}
       <section className="bg-primary-900 border-b border-white/10">
-        <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-10 grid grid-cols-3 gap-6">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-8 py-8 sm:py-10 grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6">
           {[
             { n: '15+', l: 'Testimonies' },
             { n: '6', l: 'Years of Miracles' },
@@ -243,7 +243,7 @@ export default function Testimonies() {
                   <button
                     key={cat}
                     onClick={() => setActive(cat)}
-                    className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+                    className={`inline-flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                       isActive
                         ? 'bg-primary-700 text-white shadow-lg shadow-primary-700/30'
                         : 'bg-white text-slate border border-line hover:border-primary-300 hover:text-primary-700'
@@ -355,7 +355,7 @@ export default function Testimonies() {
 
           {/* Closing banner */}
           <AnimatedSection className="mt-20">
-            <div className="relative rounded-[2rem] overflow-hidden border border-line bg-white p-10 sm:p-14 text-center shadow-soft">
+            <div className="relative rounded-[2rem] overflow-hidden border border-line bg-white p-8 sm:p-14 text-center shadow-soft">
               <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_20%_30%,#C9A84C,transparent_45%),radial-gradient(circle_at_80%_70%,#8B4D7B,transparent_45%)]" />
               <div className="relative z-10 max-w-2xl mx-auto">
                 <Quote className="w-10 h-10 mx-auto text-accent-500" />
@@ -369,7 +369,7 @@ export default function Testimonies() {
                 </p>
                 <Link
                   to="/prayer-request"
-                  className="group inline-flex items-center gap-2.5 mt-8 px-8 py-4 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 text-white font-semibold shadow-lg shadow-accent-600/25 hover:shadow-accent-500/40 hover:-translate-y-0.5 transition-all duration-300"
+                  className="group inline-flex items-center gap-2.5 mt-8 px-6 sm:px-8 py-4 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 text-white font-semibold shadow-lg shadow-accent-600/25 hover:shadow-accent-500/40 hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   Submit a Prayer Point

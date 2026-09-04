@@ -136,7 +136,7 @@ export default function Navbar() {
         <motion.div
           variants={{ open: { x: 0 }, closed: { x: '100%' } }}
           transition={{ type: 'tween', duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute right-0 top-0 bottom-0 w-[85%] max-w-sm bg-ivory shadow-2xl flex flex-col"
+          className="absolute right-0 top-0 bottom-0 w-[min(85%,24rem)] bg-ivory shadow-2xl flex flex-col"
         >
           <div className="flex items-center justify-between px-6 h-20 border-b border-line">
             <div className="flex items-center gap-3">
@@ -166,7 +166,7 @@ export default function Navbar() {
             })}
           </div>
 
-          <div className="px-6 py-6 border-t border-line space-y-3">
+          <div className="px-5 sm:px-6 py-6 border-t border-line space-y-3">
             <Link
               to="/prayer-request"
               className="flex items-center justify-center gap-2 w-full px-5 py-3 rounded-full border border-primary-200 text-primary-700 font-semibold"

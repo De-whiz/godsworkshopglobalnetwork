@@ -3,8 +3,12 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import UnderDevelopment from './pages/UnderDevelopment'
+import Services from './pages/Services'
 import Testimonies from './pages/Testimonies'
+import Books from './pages/Books'
+import PrayerRequest from './pages/PrayerRequest'
+import SubmitTestimony from './pages/SubmitTestimony'
+import Contact from './pages/Contact'
 
 export default function App() {
   return (
@@ -14,12 +18,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<UnderDevelopment title="Services & Programs" />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/testimonies" element={<Testimonies />} />
-          <Route path="/books" element={<UnderDevelopment title="Books" />} />
-          <Route path="/submit-testimony" element={<UnderDevelopment title="Submit Testimony" />} />
-          <Route path="/prayer-request" element={<UnderDevelopment title="Prayer Point" />} />
-          <Route path="/contact" element={<UnderDevelopment title="Contact Us" />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/submit-testimony" element={<SubmitTestimony />} />
+          <Route path="/prayer-request" element={<PrayerRequest />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
